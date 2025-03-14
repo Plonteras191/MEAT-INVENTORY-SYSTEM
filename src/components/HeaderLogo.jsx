@@ -4,7 +4,7 @@ import "../styles/HeaderLogo.css";
 const HeaderLogo = () => {
   return (
     <div className="header-logo">
-      <span className="logo-text">MYstore</span>
+      <span className="logo-text">MegaFarm</span>
     </div>
   );
 };

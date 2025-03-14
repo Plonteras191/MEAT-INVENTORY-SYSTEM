@@ -21,3 +21,9 @@
     color: #ecf0f1;
   }
   
+  .header-logo img {
+    width: 900px;  
+    height: auto;  
+    max-height: 80px; 
+    object-fit: contain;
+  }

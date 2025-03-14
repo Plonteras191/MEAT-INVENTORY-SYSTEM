@@ -14,7 +14,7 @@ import "./App.css";
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // Simple authentication: username and password must be "admin"
+  
   const handleLogin = (username, password) => {
     if (username === "admin" && password === "admin") {
       setIsAuthenticated(true);
