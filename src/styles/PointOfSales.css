@@ -4,7 +4,7 @@
   max-width: 1200px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .pos-container h2 {
@@ -19,18 +19,33 @@
   gap: 20px;
 }
 
-.pos-products,
-.pos-cart {
+
+.pos-products {
   flex: 1;
   min-width: 300px;
   background-color: #f9f9f9;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.pos-products h3,
-.pos-cart h3 {
+.pos-products h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #16a085;
+}
+
+
+.sold-products {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sold-products h3 {
   text-align: center;
   margin-bottom: 15px;
   color: #16a085;
@@ -59,7 +74,7 @@
 }
 
 .pos-products button,
-.pos-cart button,
+.sold-products button,
 .complete-sale {
   background-color: #16a085;
   color: #fff;
@@ -71,7 +86,7 @@
 }
 
 .pos-products button:hover,
-.pos-cart button:hover,
+.sold-products button:hover,
 .complete-sale:hover {
   background-color: #138d75;
 }

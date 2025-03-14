@@ -1,22 +1,71 @@
 .expiration-alerts {
   padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
-.expiration-alerts h2 {
+.alerts-header {
   text-align: center;
-  color: #2c3e50;
   margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: bold;
 }
 
-.expiration-alerts ul {
-  list-style: none;
-  padding: 0;
+.alerts-summary-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.expiration-alerts li {
-  background: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.alerts-summary-card h3 {
+  margin: 0;
+  color: #16a085;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.alerts-summary-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+.alerts-table-container {
+  margin-top: 20px;
+}
+
+.alerts-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alerts-table th,
+.alerts-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.alerts-table th {
+  background-color: #16a085;
+  color: #fff;
+  font-weight: bold;
+}
+
+.alerts-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.no-alerts {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
 }

@@ -1,11 +1,48 @@
 .sales-logging {
   padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
-.sales-logging h2 {
+.sales-header {
   text-align: center;
-  color: #2c3e50;
   margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.sales-summary-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sales-summary-card h3 {
+  margin: 0;
+  color: #16a085;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sales-summary-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  color: #2c3e50;
+}
+
+.sales-history {
+  margin-top: 20px;
+}
+
+.sales-history h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: bold;
 }
 
 .sales-table {
@@ -14,7 +51,8 @@
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 .sales-table th,
@@ -27,6 +65,7 @@
 .sales-table th {
   background-color: #16a085;
   color: #fff;
+  font-weight: bold;
 }
 
 .sales-table tr:hover {

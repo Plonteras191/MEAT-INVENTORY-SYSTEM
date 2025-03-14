@@ -4,7 +4,7 @@ import "../styles/PointOfSales.css";
 
 const PointOfSales = () => {
   const { products, updateProduct, addSale } = useContext(InventoryContext);
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState([]); 
 
   const handleAddToCart = (product) => {
     const qtyStr = prompt(`Enter quantity (kg) to sell for ${product.type}:`, "1");
@@ -33,9 +33,10 @@ const PointOfSales = () => {
 
   const completeSale = () => {
     if (cart.length === 0) {
-      alert("Cart is empty!");
+      alert("No sold products!");
       return;
     }
+    
     cart.forEach(item => {
       const product = products.find(p => p.id === item.id);
       if (product) {
@@ -52,6 +53,7 @@ const PointOfSales = () => {
         }
       }
     });
+  
     addSale({ total: totalAmount, date: new Date() });
     alert(`Sale completed! Total amount: ₱${totalAmount.toFixed(2)}`);
     setCart([]);
@@ -79,17 +81,17 @@ const PointOfSales = () => {
                   <td>{product.weight}</td>
                   <td>{product.price}</td>
                   <td>
-                    <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+                    <button onClick={() => handleAddToCart(product)}>Sold</button>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <div className="pos-cart">
-          <h3>Cart</h3>
+        <div className="sold-products">
+          <h3>Sold Products</h3>
           {cart.length === 0 ? (
-            <p>Your cart is empty.</p>
+            <p>No products sold yet.</p>
           ) : (
             <table className="pos-table">
               <thead>
