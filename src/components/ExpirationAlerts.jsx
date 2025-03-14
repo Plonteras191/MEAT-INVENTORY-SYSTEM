@@ -6,7 +6,7 @@ const ExpirationAlerts = () => {
   const { products } = useContext(InventoryContext);
   const today = new Date();
 
-  // Filter products that expire within the next 7 days
+  
   const alerts = products.filter((product) => {
     const expiryDate = new Date(product.expiry);
     const diffTime = expiryDate - today;
