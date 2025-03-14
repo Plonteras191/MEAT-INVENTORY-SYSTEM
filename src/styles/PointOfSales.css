@@ -1,0 +1,82 @@
+.pos-container {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pos-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.pos-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pos-products,
+.pos-cart {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pos-products h3,
+.pos-cart h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #16a085;
+}
+
+.pos-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.pos-table th,
+.pos-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.pos-table th {
+  background-color: #16a085;
+  color: #fff;
+}
+
+.pos-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.pos-products button,
+.pos-cart button,
+.complete-sale {
+  background-color: #16a085;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pos-products button:hover,
+.pos-cart button:hover,
+.complete-sale:hover {
+  background-color: #138d75;
+}
+
+.complete-sale {
+  width: 100%;
+  margin-top: 10px;
+}

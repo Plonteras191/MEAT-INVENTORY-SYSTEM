@@ -1,0 +1,61 @@
+.reports {
+    padding: 20px;
+  }
+  
+  .reports h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .report-summary {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .report-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .report-card h3 {
+    color: #16a085;
+    margin-bottom: 10px;
+  }
+  
+  .sales-history {
+    margin-top: 20px;
+  }
+  
+  .reports-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .reports-table th,
+  .reports-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .reports-table th {
+    background-color: #16a085;
+    color: #fff;
+  }
+  
+  .reports-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

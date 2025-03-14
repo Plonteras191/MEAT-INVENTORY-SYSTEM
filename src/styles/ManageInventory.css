@@ -1,0 +1,94 @@
+.manage-inventory {
+    padding: 20px;
+  }
+  
+  .manage-inventory h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .inventory-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .inventory-form input,
+  .inventory-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .inventory-form input:focus {
+    border-color: #16a085;
+  }
+  
+  .inventory-form button {
+    background-color: #16a085;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    grid-column: span 4;
+  }
+  
+  .inventory-form button:hover {
+    background-color: #138d75;
+  }
+  
+  .inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .inventory-table th,
+  .inventory-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .inventory-table th {
+    background-color: #16a085;
+    color: #fff;
+  }
+  
+  .inventory-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .inventory-table button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 5px;
+  }
+  
+  .inventory-table button:first-child {
+    background-color: #3498db;
+  }
+  
+  .inventory-table button:first-child:hover {
+    background-color: #2980b9;
+  }
+  
+  .inventory-table button:last-child {
+    background-color: #e74c3c;
+  }
+  
+  .inventory-table button:last-child:hover {
+    background-color: #c0392b;
+  }
+  
